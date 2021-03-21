@@ -2,6 +2,15 @@
 var generateBtn = document.querySelector("#generate");
 
 
+var numericCharacters = [0123456789];
+
+var specialCharacters = [" !"#$%&'()*+,-./:;<=>?@[]^_`{|}~"] 
+
+var upperCaseCharacters=[ABCDEFGHIJKLMNOPQRSTUVWXYZ];
+
+var lowerCaseCharacters=[abcdefghijklmnopqrstuvwzyz];
+
+
 function generatePassword(){
 var passLength = window.prompt("Your password length must be between 8 and 128");
 
@@ -15,41 +24,9 @@ else {
 }
 
 window.confirm("Do you want lowercase characters?");
-if (lowerChars)= {
-
-}
-
-else{
-
-}
-
 window.confirm("Do you want uppercase characters?");
-
-if (upperChars)= {
-
-}
-
-else{
-  
-}
 window.confirm("Do you want numeric characters?");
-
-if (numChars)= {
-
-}
-
-else{
-  
-}
 window.confirm("Do you want special characters?");
-
-if (click OK)= {
-
-}
-
-else{
-  
-}
 }
 
 
