@@ -1,16 +1,25 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword(){
-var passLength = window.prompt("How long do you want your password to be?");
+var numericCharacters = [0123456789];
 
-if (passLength < 8 || passLength > 128 || passLength == '' || isNaN(passLength)) {
-  window.alert("Invalid Input")
+var specialCharacters = [" !"#$%&'()*+,-./:;<=>?@[]^_`{|}~"];
+
+var upperCaseCharacters=[ABCDEFGHIJKLMNOPQRSTUVWXYZ];
+
+var lowerCaseCharacters=[abcdefghijklmnopqrstuvwzyz];
+
+function generatePassword(){
+var passLength = window.prompt("Your password length must be between 8 and 128");
+
+if (parseInt(passLength)>=8 &&(passLength)<=128){
+  oneValue=passLength
 }
 
-
-
-
+else {
+  window.alert("Number is not valid. Press'OK' and start again!")
+  run()
+}
 
 window.confirm("Do you want lowercase characters?");
 window.confirm("Do you want uppercase characters?");
