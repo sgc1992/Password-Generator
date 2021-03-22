@@ -20,8 +20,8 @@ if (parseInt(passLength)>=8 &&(passLength)<=128){
 }
 
 else {
-  window.alert("Number is not valid. Press'OK' and start again!")
-  run()
+  window.alert("Please choose the correct length for the password. Press'OK' and start again!")
+  return
 }
 
 
@@ -56,17 +56,15 @@ if (specCase){
   console.log(possibleChars)
 }
 
-// var password=""
-// for loop, loop x length of user choice
-for (var i = 0; i < passLength; i++) {
-  // for each generate a random number between 0 and the lenght of possibleChars
-  // use that random number to pick a character from possibleChars
-  // concat the selected character on to password
-}
-
-
-return password;
-
+  var password = '';
+  for (var i = 0; i < passLength; i++) {
+    var randomNumber = Math.floor(Math.random() * possibleChars.length)
+    console.log(randomNumber)
+    console.log(possibleChars[randomNumber])
+    
+    password = password + possibleChars[randomNumber]
+  }
+  return password;
 }
 
 // Write password to the #password input
