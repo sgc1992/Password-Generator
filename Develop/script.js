@@ -2,13 +2,13 @@
 var generateBtn = document.querySelector("#generate");
 
 
-var numericCharacters = [0123456789];
+var numericCharacters = "0123456789"
 
-var specialCharacters = [" !"#$%&'()*+,-./:;<=>?@[]^_`{|}~"] 
+var specialCharacters = " !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~"
 
-var upperCaseCharacters=[ABCDEFGHIJKLMNOPQRSTUVWXYZ];
+var upperCaseCharacters= "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-var lowerCaseCharacters=[abcdefghijklmnopqrstuvwzyz];
+var lowerCaseCharacters="abcdefghijklmnopqrstuvwzyz"
 
 
 function generatePassword(){
@@ -23,7 +23,9 @@ else {
   run()
 }
 
-window.confirm("Do you want lowercase characters?");
+var lowerCase = window.confirm("Do you want lowercase characters?");
+if (lowerCaseCharacters)
+
 window.confirm("Do you want uppercase characters?");
 window.confirm("Do you want numeric characters?");
 window.confirm("Do you want special characters?");
