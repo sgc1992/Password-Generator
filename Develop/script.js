@@ -49,12 +49,23 @@ if (numCase){
 }
 
 
-var specCase = windows.confirm("Do you want special characters?");
+var specCase = window.confirm("Do you want special characters?");
 console.log({possibleChars})
 if (specCase){
   possibleChars = possibleChars + specialCharacters
   console.log(possibleChars)
 }
+
+// var password=""
+// for loop, loop x length of user choice
+for (var i = 0; i < passLength; i++) {
+  // for each generate a random number between 0 and the lenght of possibleChars
+  // use that random number to pick a character from possibleChars
+  // concat the selected character on to password
+}
+
+
+return password;
 
 }
 
