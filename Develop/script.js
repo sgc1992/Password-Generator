@@ -10,6 +10,7 @@ var upperCaseCharacters= "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 var lowerCaseCharacters="abcdefghijklmnopqrstuvwzyz"
 
+var possibleChars=""
 
 function generatePassword(){
 var passLength = window.prompt("Your password length must be between 8 and 128");
@@ -23,15 +24,39 @@ else {
   run()
 }
 
-var lowerCase = window.confirm("Do you want lowercase characters?");
-if (lowerCaseCharacters)
 
-window.confirm("Do you want uppercase characters?");
-window.confirm("Do you want numeric characters?");
-window.confirm("Do you want special characters?");
+var lowerCase = window.confirm("Do you want lowercase characters?");
+console.log({possibleChars})
+if (lowerCase){
+  possibleChars = possibleChars + lowerCaseCharacters
+  console.log(possibleChars)
 }
 
 
+var upperCase = window.confirm("Do you want uppercase characters?");
+console.log({possibleChars})
+if (upperCase){
+  possibleChars = possibleChars + upperCaseCharacters
+  console.log(possibleChars)
+}
+
+
+var numCase = window.confirm("Do you want numeric characters?");
+console.log({possibleChars})
+if (numCase){
+  possibleChars = possibleChars + numericCharacters
+  console.log(possibleChars)
+}
+
+
+var specCase = windows.confirm("Do you want special characters?");
+console.log({possibleChars})
+if (specCase){
+  possibleChars = possibleChars + specialCharacters
+  console.log(possibleChars)
+}
+
+}
 
 // Write password to the #password input
 function writePassword() {
