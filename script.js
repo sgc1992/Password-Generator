@@ -57,6 +57,7 @@ if (specCase){
   possibleChars = possibleChars + specialCharacters
   console.log(possibleChars)
 }
+
 //Createa an empty new variable
   var password = '';
 //Running a for loop to generate the password
@@ -67,6 +68,7 @@ if (specCase){
     
     password = password + possibleChars[randomNumber]
   }
+
   return password;
 }
 
