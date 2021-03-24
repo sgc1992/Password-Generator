@@ -77,14 +77,14 @@ funtion checkInputs(){
 var lowerCaseValue = lowerCase.value.trim();//trim function will removes all the white spaces
 var upperCaseValue = upperCase.value.trim();
 var numCaseValue = numCase.value.trim();
-var upperCaseValue = upperCase.value.trim();
+var specCaseValue = specCase.value.trim();
 
 if(lowerCaseValue===){
 
 }
 
 else{
-  
+
 }
 
 }
