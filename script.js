@@ -72,6 +72,14 @@ if (specCase){
   return password;
 }
 
+funtion checkInputs(){
+var lowerCaseValue = lowerCase.value.trim();
+var upperCaseValue = upperCase.value.trim();
+var numCaseValue = numCase.value.trim();
+var upperCaseValue = upperCase.value.trim();
+
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
