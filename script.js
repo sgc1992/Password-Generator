@@ -72,11 +72,20 @@ if (specCase){
   return password;
 }
 
+//Creating a function for checking the inputs
 funtion checkInputs(){
-var lowerCaseValue = lowerCase.value.trim();
+var lowerCaseValue = lowerCase.value.trim();//trim function will removes all the white spaces
 var upperCaseValue = upperCase.value.trim();
 var numCaseValue = numCase.value.trim();
 var upperCaseValue = upperCase.value.trim();
+
+if(lowerCaseValue===){
+
+}
+
+else{
+  
+}
 
 }
 
