@@ -18,7 +18,7 @@ function generatePassword(){
 var passLength = window.prompt("Your password length must be between 8 and 128");
 //Creating the if condition for the password requirement
 if (parseInt(passLength)>=8 &&(passLength)<=128){
-  oneValue=passLength
+  
 }
 //This is the else statment which will give a window altert if the input will not meet the password length requirement
 else {
@@ -70,23 +70,6 @@ if (specCase){
   }
 
   return password;
-}
-
-//Creating a function for checking the inputs
-funtion checkInputs(){
-var lowerCaseValue = lowerCase.value.trim();//trim function will removes all the white spaces
-var upperCaseValue = upperCase.value.trim();
-var numCaseValue = numCase.value.trim();
-var specCaseValue = specCase.value.trim();
-
-if(lowerCaseValue===){
-
-}
-
-else{
-
-}
-
 }
 
 // Write password to the #password input
