@@ -57,7 +57,13 @@ if (specCase){
   possibleChars = possibleChars + specialCharacters
   console.log(possibleChars)
 }
+ if (lowerCase || upperCase || numCase || specCase){
 
+
+ }
+ else{window.alert("Please select the atleast one the charater")
+ generatePassword()
+ }
 //Createa an empty new variable
   var password = '';
 //Running a for loop to generate the password
