@@ -61,7 +61,7 @@ if (specCase){
 
 
  }
- else{window.alert("Please select the atleast one the charater")
+ else{window.alert("Please select atleast one of the charaters")
  generatePassword()
  }
 //Createa an empty new variable
